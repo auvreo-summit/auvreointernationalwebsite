@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="auvreoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b81424" />
+      <stop offset="45%" stop-color="#7a0a14" />
+      <stop offset="90%" stop-color="#140204" />
+      <stop offset="100%" stop-color="#050001" />
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#c41224" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#700914" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Ambience -->
+  <rect width="800" height="400" fill="#070102" />
+  <rect width="800" height="400" fill="url(#redGlow)" />
+
+  <!-- AUVREO Giant Condensed Base Text -->
+  <g text-anchor="middle" font-family="'Impact', 'Arial Black', 'Space Grotesk', sans-serif" font-weight="900">
+    <!-- Red Outline Glow -->
+    <text x="400" y="240" font-size="160" letter-spacing="4" fill="none" stroke="#e51e2b" stroke-width="3" opacity="0.85">AUVREO</text>
+    <!-- Gradient Fill -->
+    <text x="400" y="240" font-size="160" letter-spacing="4" fill="url(#auvreoGrad)">AUVREO</text>
+  </g>
+
+  <!-- INTERNATIONAL Bold Italic Overlay in Bright Crimson -->
+  <g transform="skewX(-14)" text-anchor="middle">
+    <text x="445" y="245" 
+          font-family="'Arial Black', 'Impact', sans-serif" 
+          font-weight="900" 
+          font-style="italic" 
+          font-size="64" 
+          letter-spacing="2" 
+          fill="#e51e2b" 
+          stroke="#070102" 
+          stroke-width="4" 
+          paint-order="stroke fill"
+          filter="url(#softGlow)">
+      INTERNATIONAL
+    </text>
+  </g>
+
+  <!-- Sub-labels -->
+  <!-- Bottom Left: YOUTH SUMMIT'26 in Gold -->
+  <text x="140" y="285" 
+        font-family="'Plus Jakarta Sans', sans-serif" 
+        font-weight="700" 
+        font-size="18" 
+        letter-spacing="4" 
+        fill="#e6c887">
+    YOUTH SUMMIT’26
+  </text>
+
+  <!-- Bottom Right: WHERE IDEAS BECOME IMPACT in crisp white/cream -->
+  <text x="660" y="285" 
+        text-anchor="end" 
+        font-family="'Plus Jakarta Sans', sans-serif" 
+        font-weight="600" 
+        font-size="13" 
+        letter-spacing="3" 
+        fill="#e8e2d8" 
+        opacity="0.9">
+    WHERE IDEAS BECOME IMPACT
+  </text>
+
+  <!-- Subtle divider accent line -->
+  <line x1="140" y1="262" x2="660" y2="262" stroke="#b81424" stroke-width="1.5" opacity="0.35" />
+</svg>

@@ -1,0 +1,7 @@
+{
+  "name": "Auvreo International",
+  "description": "Connecting People, Cultures & Ideas. Official platform for Auvreo International and the Auvreo International Youth Summit — India 2026.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #080203;
+    color: #fcfaf7;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom visual utilities for Auvreo branding */
+.auvreo-gradient-radial {
+  background: radial-gradient(circle at 50% 100%, rgba(196, 18, 36, 0.28) 0%, rgba(112, 9, 20, 0.12) 40%, rgba(8, 2, 3, 0) 80%);
+}
+
+.auvreo-hero-glow {
+  background: radial-gradient(ellipse at 50% 40%, rgba(229, 30, 43, 0.16) 0%, rgba(144, 11, 23, 0.08) 50%, rgba(8, 2, 3, 0) 80%);
+}
+
+.auvreo-gold-text {
+  color: #e6c887;
+}
+
+.auvreo-crimson-glow {
+  box-shadow: 0 0 35px -5px rgba(229, 30, 43, 0.35);
+}
+
+.auvreo-glass {
+  background: rgba(18, 6, 8, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 30, 43, 0.15);
+}
+
+.auvreo-card {
+  background: linear-gradient(180deg, rgba(26, 9, 12, 0.7) 0%, rgba(12, 4, 6, 0.9) 100%);
+  border: 1px solid rgba(229, 30, 43, 0.18);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.auvreo-card:hover {
+  border-color: rgba(229, 30, 43, 0.45);
+  box-shadow: 0 10px 30px -10px rgba(229, 30, 43, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #080203;
+}
+::-webkit-scrollbar-thumb {
+  background: #380d12;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c41224;
+}
